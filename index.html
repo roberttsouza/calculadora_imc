@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora IMC</title>
+</head>
+<body>
+  <main class="areaPrincipal">
+
+    <div class="containerForm">
+      <div class="contantForm">
+        <div class="formDados">
+          <form class="formDado" action="">
+            <label class="labImc" for="peso">Peso</label><br>
+            <input class="inpImc" type="number" id="peso" placeholder="74Kg"><br>
+
+            <label class="labImc" for="altura">Altura</label><br>
+            <input class="inpImc" type="number" id="altura"  placeholder="1.78cm"><br><br>
+
+            <button class="calcular" onclick="calcular()" type="submit">Calcular</button>
+          </form>
+        </div>
+
+        <div class="resImc">
+          <h2>Resultado:</h2>
+          <p>De acordo com a com a tabela, seu IMC é considerado normal para a sua altura. Para manter o valor de IMC normal.</p>
+
+          <table>
+            <thead>
+                <tr>
+                    <th>IMC</th>
+                    <th>Classificação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="linha1">
+                    <td>Abaixo de 14,9</td>
+                    <td>MAGREZA!</td>
+                </tr>
+                <tr class="linha2">
+                    <td>Entre 18 e 24,9</td>
+                    <td>NORMAL!</td>
+                </tr>
+                <tr class="linha3">
+                    <td>Entre 25 e 29,9</td>
+                    <td>SOBREPESO!</td>
+                </tr>
+                <tr class="linha4">
+                    <td>Entre 30 e 39,9</td>
+                    <td>OBESIDADE!</td>
+                </tr>
+                <tr class="linha5">
+                    <td>Acima de 40</td>
+                    <td>OBESIDADE GRAVE!</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+
