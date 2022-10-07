@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="PT-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,15 +20,16 @@
             <label class="labImc" for="altura">Altura</label><br>
             <input class="inpImc" type="number" id="altura"  placeholder="1.78cm"><br><br>
 
-            <button class="calcular" onclick="calcular()" type="submit">Calcular</button>
+            <button class="calcular" onclick="calcular(); return false" type="submit">Calcular</button>
           </form>
         </div>
 
         <div class="resImc">
           <h2>Resultado:</h2>
-          <p>De acordo com a com a tabela, seu IMC é considerado normal para a sua altura. Para manter o valor de IMC normal.</p>
+          <p class="pResImc"></p>
 
-          <table>
+          <div class="tableD">
+              <table>
             <thead>
                 <tr>
                     <th>IMC</th>
@@ -58,6 +59,9 @@
                 </tr>
             </tbody>
         </table>
+
+          </div>
+          
         </div>
       </div>
     </div>
