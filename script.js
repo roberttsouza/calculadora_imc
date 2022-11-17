@@ -1,3 +1,22 @@
+//Função para assistir os teclas digitadas e permitir que seja printado na tela apenas as caracteres informados.
+document.getElementById("peso").onkeypress = function(e) {
+    var chrPeso = String.fromCharCode(e.which);
+         if ("1234567890.".indexOf(chrPeso) < 0)
+           return false;
+            console.log(chrPeso)
+       };
+
+document.getElementById("altura").onkeypress = function(e) {
+    var chrAlt = String.fromCharCode(e.which);
+        if ("1234567890".indexOf(chrAlt) < 0)
+           return false;
+            console.log(chrAlt)
+       };
+
+
+
+
+
 function calcular() {
   const peso = document.querySelector('#peso').value;
   const altura = document.querySelector('#altura').value / 100;
